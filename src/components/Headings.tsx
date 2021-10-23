@@ -23,8 +23,8 @@ const Heading = ({
             'linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0))',
           backgroundClip: 'text',
           textFillColor: 'transparent' as any,
-          '-webkit-background-clip': 'text' as any,
-          '-webkit-text-fill-color': 'transparent' as any,
+          WebkitBackgroundClip: 'text' as any,
+          WebkitTextFillColor: 'transparent' as any,
           ...commonStyles,
         }}
       >
@@ -94,8 +94,8 @@ const Description = ({
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               display: '-webkit-box',
-              '-webkit-line-clamp': '2' as any,
-              '-webkit-box-orient': 'vertical' as any,
+              WebkitLineClamp: '2' as any,
+              WebkitBoxOrient: 'vertical' as any,
             }}
           >
             {item.description}

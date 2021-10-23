@@ -83,6 +83,7 @@ export function Indicators(props: {
           />
           {Array.from({ length: props.total }).map((_, idx) => (
             <Box
+              key={idx}
               sx={{
                 position: 'absolute',
                 left: 0,
@@ -105,6 +106,7 @@ export function Indicators(props: {
         <Box>
           {Array.from({ length: props.total }).map((_, idx) => (
             <Flex
+              key={idx}
               sx={{
                 alignItems: 'center',
                 justifyContent: 'center',

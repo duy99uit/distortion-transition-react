@@ -184,6 +184,7 @@ const CardTitle = ({
           <Flex>
             {Array.from({ length: 5 }).map((_, idx) => (
               <Box
+              key={idx}
                 sx={{
                   width: dotSize,
                   height: dotSize,
@@ -233,6 +234,7 @@ export function CardList(props: {
           const dotSize = isBig ? 12 : 10;
           return (
             <Box
+              key={idx}
               mr="40px"
               sx={{
                 width: `calc(${width} / ${isBig ? 2.5 : 2.8})`,
